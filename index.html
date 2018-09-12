@@ -38,56 +38,16 @@
     
     <header role="banner">
      
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand absolute" href="index.html"><img src="images/Logo.JPG" width="220" height="42" > </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Ana Sayfa</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="courses.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gruplar</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="courses.html">Kreş Çağı Kodlama Eğitimi</a>
-                  <a class="dropdown-item" href="courses.html">8-10 Yaş Kodlama Eğitimi</a>
-                  <a class="dropdown-item" href="courses.html">10-12 Yaş Kodlama Eğitimi</a>
-                  <a class="dropdown-item" href="courses.html">12-14 Yaş Kodlama Eğitimi</a>
-                  <a class="dropdown-item" href="courses.html">Temel Kodlama Eğitimi</a>
-                </div>
-
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kod Dilleri</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown05">
-                  <a class="dropdown-item" href="#">Scratch</a>
-                  <a class="dropdown-item" href="#">Robotic</a>
-                  <a class="dropdown-item" href="#">HTML</a>
-                  <a class="dropdown-item" href="#">JavaScript</a>
-                  <a class="dropdown-item" href="#">Python</a>
-                </div>
-
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Hakkımızda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">İletişim</a>
-              </li>
-            </ul>
-            
-            
-          </div>
-        </div>
-      </nav>
+      <!-- Here was the nav bar place-->
+	  <div id="nav-placeholder">
+	   
+	  </div>
+	  <script src="js/jquery-3.2.1.min.js"></script>
+	  <script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
     </header>
     <!-- END header 
 
@@ -730,7 +690,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- loader -->
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--<script src="js/jquery-3.2.1.min.js"></script>-->
     <script src="js/jquery-migrate-3.0.0.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
