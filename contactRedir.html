@@ -96,25 +96,25 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 pr-md-5">
-            <form >
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSft8GV-elptE057Yw7Wd7peubZoVjEwSfZ4s6H8smr-5g_WJg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                   <div class="row">
                     <div class="col-md-4 form-group">
                       <label for="name">İsim</label>
-                      <input type="text" id="name" class="form-control py-2">
+                      <input type="text" name="entry.2005620554" id="entry.2005620554" class="form-control py-2">
                     </div>
                     <div class="col-md-4 form-group">
                       <label for="phone">Telefon Numarası</label>
-                      <input type="text" id="phone" class="form-control py-2">
+                      <input type="text" name="entry.1166974658" id="entry.1166974658" class="form-control py-2">
                     </div>
                     <div class="col-md-4 form-group">
                       <label for="email">Email</label>
-                      <input type="email" id="email" class="form-control py-2">
+                      <input type="email" name="entry.1045781291" id="entry.1045781291" class="form-control py-2">
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-12 form-group">
                       <label for="message">Mesajınızı yazabilirsiniz</label>
-                      <textarea name="message" id="message" class="form-control py-2" cols="30" rows="8"></textarea>
+                      <textarea name="entry.839337160" id="entry.839337160" class="form-control py-2" cols="30" rows="8"></textarea>
                     </div>
                   </div>
                   <div class="row">
@@ -123,6 +123,7 @@
                     </div>
                   </div>
                 </form>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
           </div>
           <div class="col-md-4">
             
@@ -272,6 +273,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	$("#mailSend").click(function(){
 	var body =$("#name").val()+"*"+$("#phone").val()+"*"+$("#email").val()+"*"+$("#message").val();
 	});
+	<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
    
 	
 
