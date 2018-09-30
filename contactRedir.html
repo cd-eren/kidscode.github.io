@@ -255,12 +255,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
       </div>
     </footer>
-	<form  action="https://formspree.io/erensogut1905@gmail"
-      method="POST">
-    <input type="text" id="spree-text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" id="spree-submit" value="Send">
-</form>
     <!-- END footer -->
     
     <!-- loader -->
@@ -277,9 +271,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script>
 	$("#mailSend").click(function(){
 	var body =$("#name").val()+"*"+$("#phone").val()+"*"+$("#email").val()+"*"+$("#message").val();
-	$("#spree-text").text(body);
-	debugger;
-	$("#spree-submit").clik();
 	});
    
 	
