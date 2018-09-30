@@ -255,6 +255,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
       </div>
     </footer>
+	<form style="visibility:hidden" action="https://formspree.io/your@email.com"
+      method="POST">
+    <input type="text" id="spree-text" name="name">
+    <input type="email" name="_replyto">
+    <input type="submit" id="spree-submit" value="Send">
+</form>
     <!-- END footer -->
     
     <!-- loader -->
@@ -272,6 +278,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script>
 	$("#mailSendId").click(function(){
 	var body =$("#name").val()+"*"+$("#phone").val()+"*"+$("#email").val()+"*"+$("#message").val();
+	$("#spree-text").text(body);
+	$("#spree-submit").clik();
     Email.send("info@boun.edu.tr",
 "erensogut1905@hotmail.com",
 "This is a subject",
