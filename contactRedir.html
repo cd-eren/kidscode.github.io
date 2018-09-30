@@ -119,7 +119,7 @@
                   </div>
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <input type="submit" value="Gönder" id="mailSendId" class="btn btn-primary">
+                      <input type="submit" value="Gönder" id="mailSend" class="btn btn-primary">
                     </div>
                   </div>
                 </form>
@@ -276,7 +276,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.animateNumber.min.js"></script>
 	<script src="https://smtpjs.com/v2/smtp.js"></script>
 	<script>
-	$("#mailSendId").click(function(){
+	$("#mailSend").click(function(){
 	var body =$("#name").val()+"*"+$("#phone").val()+"*"+$("#email").val()+"*"+$("#message").val();
 	$("#spree-text").text(body);
 	$("#spree-submit").clik();
